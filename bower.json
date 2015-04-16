@@ -1,0 +1,21 @@
+{
+  "name": "tuts2",
+  "version": "0.0.0",
+  "authors": [
+    "QuadFlask <pop9310@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.5",
+    "platform": "Polymer/platform#~0.4.2",
+    "core-elements": "Polymer/core-elements#~0.5.5"
+  }
+}
