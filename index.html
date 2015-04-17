@@ -16,18 +16,27 @@
 			height: 50px;
 			width: 50px;
 		}
+		.example{
+			background: #222;
+			padding: 10px;
+		}
+		.example > div {
+			background: #eee;
+			margin: 10px;
+		}
 	</style>
 </head>
+<!-- fullbleed: 뷰포트 꽉 채우기 -->
 <body fullbleed layout vertical>
 	<core-header-panel flex>
 		<core-toolbar>
 			<div>Hello</div>
 		</core-toolbar>
-		<p>Hello Hello Hello Hello Hello Hello</p>
-		<core-icon icon="polymer"></core-icon>
-		<core-icon icon="android"></core-icon>
-		<core-icon icon="social:post-instagram"></core-icon>
-		<core-icon icon="social:facebook"></core-icon>
+		<div class="example" layout horizontal>
+			<div flex>One</div>
+			<div flex>Two</div>
+			<div flex two>Three</div>
+		</div>
 	</core-header-panel>
 </body>
 </html>
