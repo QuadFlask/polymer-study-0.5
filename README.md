@@ -12,7 +12,7 @@
 
 `python -m SimpleHTTPServer` 로 로컬 서버 띄우기 사용(파이썬 버전 2.x, 3.x 마다 명령어가 다르다.)
 
-index.html 에서 폴리머를 사용하기 위해선 
+index.html 에서 폴리머를 사용하기 위해선
 
 ```html
 <script src="bower_components/platform/platform.js"></script>
@@ -20,12 +20,12 @@ index.html 에서 폴리머를 사용하기 위해선
 
 로 스크립트를 로드해야 함.
 
-### 커스텀 앨리먼트 만들기 
+### 커스텀 앨리먼트 만들기
 
 ```html
 <link rel="import" href="bower_components/polymer/polymer.html">
 ```
-를 로드한뒤, 
+를 로드한뒤,
 
 ```html
 <polymer-element name="test-elem" attributes="name">
@@ -68,7 +68,7 @@ index.html 에서 폴리머를 사용하기 위해선
 
 폴리머에서 사용할 수 있도록 미리 만들어진 녀석들이 있는데 설치해줘야함.
 
-`bower install --save Polymer/core-elements`로 현재 디렉터리에 다운 받은뒤, 
+`bower install --save Polymer/core-elements`로 현재 디렉터리에 다운 받은뒤,
 
 ```html
 <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
@@ -81,6 +81,17 @@ index.html 에서 폴리머를 사용하기 위해선
 ```
 
 로 사용하고자 하는 컴포넌트를 로드한다.
+
+
+
+`bower install Polymer/paper-elements` 로 설치.
+
+
+
+
+
+
+
 
 
 

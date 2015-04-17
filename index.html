@@ -6,6 +6,7 @@
 	<link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
 	<link rel="import" href="bower_components/core-icons/core-icons.html">
 	<link rel="import" href="bower_components/core-icons/social-icons.html">
+	<link rel="import" href="bower_components/paper-elements/paper-elements.html">
 	<style>
 		core-toolbar{
 			background: #333;
@@ -19,24 +20,46 @@
 		.example{
 			background: #222;
 			padding: 10px;
+			height: 300px;
 		}
 		.example > div {
 			background: #eee;
 			margin: 10px;
 		}
+		paper-button{
+			background: blue;
+			color:#fff;
+		}
+		paper-button::shadow #ripple{
+			color: white;
+		}
+		paper-tabs{
+			background: #8fb4cf;
+		}
+		paper-tabs::shadow #selectionBar{
+			background-color: #e040fb;
+		}
+		paper-tabs::shadow paper-tab::shadow #ink{
+			background-color: #e040fb;
+		}
+
 	</style>
 </head>
-<!-- fullbleed: 뷰포트 꽉 채우기 -->
 <body fullbleed layout vertical>
 	<core-header-panel flex>
 		<core-toolbar>
 			<div>Hello</div>
 		</core-toolbar>
-		<div class="example" layout horizontal>
-			<div flex>One</div>
-			<div flex>Two</div>
-			<div flex two>Three</div>
-		</div>
+		<p>Hello </p>
+		<paper-tabs selected="0">
+			<paper-tab>tab1</paper-tab>
+			<paper-tab>tab2</paper-tab>
+			<paper-tab>tab3</paper-tab>
+		</paper-tabs>
+
+		<paper-checkbox></paper-checkbox>
+		<paper-button>button</paper-button>
+		<paper-button raised>button</paper-button>
 	</core-header-panel>
 </body>
 </html>
